@@ -1,10 +1,10 @@
-# Model Driven Engineering, Artificial Intelligence, and DevOps to Support Software and Systems Engineering: a Systematic Mapping Study of Current Combinations and Future Challenges for Integration
+# Model-Driven Engineering, Artificial Intelligence, and DevOps to Support Software and Systems Engineering: A Systematic Mapping Study of Current Combinations and Future Challenges for Integration
 
 ## [Visit the classification website](https://hepsycode.github.io/aidoart-sms.github.io/index.html)
 
 ## Abstract
 - **Complexity of Modern Systems**: The paper discusses the challenges posed by the complexity of modern systems like Cyber-Physical Systems (CPS) and the need for efficient system and software engineering processes.
-- **Integration of MDE, AI/ML, and DevOps**: It emphasizes the benefits of integrating Model-Driven Engineering (MDE), Artificial Intelligence/Machine Learning (AI/ML), and DevOps to support continuous development of complex systems.
+- **Integration of MDE, AI/ML, and DevOps**: It emphasizes the benefits of integrating Model-Driven Engineering (MDE), Artificial Intelligence/Machine Learning (AI/ML), and DevOps to support the continuous development of complex systems.
 - **AIDOaRt Project**: The paper highlights the objectives of the AIDOaRt project, which aims to support AI-augmented automation for modeling, coding, testing, monitoring, and continuous development in CPSs.
 - **Systematic Mapping Study**: An extensive review of literature is conducted to explore the current state of research and practical solutions within MDE, AI/ML, and DevOps.
 
@@ -33,7 +33,10 @@ The paper concludes with a discussion on the potential innovations expected from
 
 The repository accompanying this systematic mapping study (SMS) includes additional material that provides further insights into the selected studies. This material is essential for understanding the depth and scope of the research conducted in the study.
 
-- **Selected Studies**: The final list of selected papers is included in the repository. These papers have been carefully reviewed and are considered relevant to the study's research goals.
+- **Classification**: This section includes web pages and other resources used for the classification in the systematic mapping study. It serves as a guide to the criteria and categories applied during the study's classification phase.
+- **Selected Studies**: The final list of selected papers (in pdf) is included in the repository. These papers have been carefully reviewed and are considered relevant to the study's research goals.
+- **Results**: This section contains the outcomes of the systematic mapping study. It includes detailed analyses, synthesized data, and visual representations of the data to depict trends and insights drawn from the selected studies.
+- **MDE-AI/ML-DevOps BoK**: This part of the repository houses the Body of Knowledge (BoK) for Model-Driven Engineering (MDE), Artificial Intelligence/Machine Learning (AI/ML), and DevOps. The MDE BoK is based on extensive literature and frameworks as outlined by Burgueño et al. (2019). The AI/ML BoK follows the operational definitions and taxonomy developed by the European Commission’s Joint Research Centre, as mentioned by Samoili et al. (2020). The DevOps BoK is derived from a systematic mapping study by Jabbari et al. (2016) detailing definitions and practices within the field.
 - **Reviews**: Each selected study has undergone a detailed review process. The reviews are documented and included in the repository, offering a comprehensive evaluation of the studies' contributions to the field.
 - **Repository Access**: The repository is accessible for those interested in delving deeper into the SMS's findings. It contains all the necessary data and analyses that support the conclusions drawn in the study.
 
