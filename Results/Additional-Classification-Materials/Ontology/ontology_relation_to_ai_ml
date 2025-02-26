@@ -1,0 +1,135 @@
+// AI/ML Ontology
+digraph {
+	rankdir=TB splines=ortho
+	edge [labelangle=0 labeldistance=0 labelfloat=true]
+	AIML [label="AI/ML" fillcolor=lightblue shape=box style=filled]
+	CPS [label="Cyber-Physical Systems
+(WK: 17)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> CPS [headlabel="Related To"]
+	DigitalTwins [label="digital twins
+(WK: 4)" fillcolor=lightyellow shape=ellipse style=filled]
+	DigitalThread [label="Digital thread
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	SmartCity [label="Smart city
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	BuildSystems [label="build systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	TestPrior [label="Test prioritization
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	IoTDev [label="IoT development
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SixG [label="6G
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CPS -> DigitalTwins
+	CPS -> DigitalThread
+	CPS -> SmartCity
+	CPS -> BuildSystems
+	CPS -> TestPrior
+	CPS -> IoTDev
+	CPS -> SixG
+	SE [label="Software Engineering
+(WK: 20)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> SE [headlabel="Related To"]
+	SE_Process [label="Process
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	SE_Req [label="Requirement
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	SE_Testing [label="Testing
+(WK: 13)" fillcolor=lightblue shape=box style=filled]
+	SE -> SE_Process
+	SE -> SE_Req
+	SE -> SE_Testing
+	RegressionTest [label="Regression testing
+(WK: 6)" fillcolor=lightpink shape=ellipse style=filled]
+	TestCasePrior [label="Test case prioritization
+(WK: 3)" fillcolor=lightpink shape=ellipse style=filled]
+	TestCaseSelect [label="Test case selection
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	TestSelect [label="Test selection
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	TCP [label="Test Case Prioritization (TCP)
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SE_Testing -> RegressionTest
+	SE_Testing -> TestCasePrior
+	SE_Testing -> TestCaseSelect
+	SE_Testing -> TestSelect
+	SE_Testing -> TCP
+	MDE [label="Model-Driven Engineering
+(WK: 19)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> MDE [headlabel="Related To"]
+	MDSE1 [label="Model-Driven Software Engineering
+(WK: 8)" fillcolor=lightyellow shape=ellipse style=filled]
+	ArtifactModels [label="artifact models
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelDriven [label="Model-driven
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	MDSE2 [label="Model-Driven Software Engineering:
+(WK: 8)" fillcolor=lightblue shape=box style=filled]
+	MDE -> MDSE1
+	MDE -> ArtifactModels
+	MDE -> ModelDriven
+	MDE -> MDSE2
+	DomainSpecMod [label="domain specific modeling
+(WK: 4)" fillcolor=lightpink shape=ellipse style=filled]
+	Metamodeling [label="metamodeling
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	MetaClass [label="metamodel classification
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MetaRepos [label="metamodel repositories
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MDSE2 -> DomainSpecMod
+	MDSE2 -> Metamodeling
+	MDSE2 -> MetaClass
+	MDSE2 -> MetaRepos
+	DevOpsRel [label="DevOps
+(WK: 13)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> DevOpsRel [headlabel="Related To"]
+	ContInt [label="Continuous integration
+(WK: 6)" fillcolor=lightyellow shape=ellipse style=filled]
+	MLOps [label="MLOps
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	RLOps [label="RLOps
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	MgmtTools [label="Management tools
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DevOpsRel -> ContInt
+	DevOpsRel -> MLOps
+	DevOpsRel -> RLOps
+	DevOpsRel -> MgmtTools
+	CloudRel [label="Cloud
+(WK: 5)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> CloudRel [headlabel="Related To"]
+	CloudComputing [label="Cloud computing
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudApp [label="Cloud application
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudRes [label="Cloud resources
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudRel -> CloudComputing
+	CloudRel -> CloudApp
+	CloudRel -> CloudRes
+	Security [label="Security
+(WK: 2)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> Security [headlabel="Related To"]
+	Cybersecurity [label="Cybersecurity
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	Security -> Cybersecurity
+	Tools [label="Tools & Framework
+(WK: 7)" fillcolor=lightgreen shape=ellipse style=filled]
+	AIML -> Tools [headlabel=Uses]
+	ORAN [label="O-RAN
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	XAI [label="XAI
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	XRL [label="XRL
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	MgmtTools2 [label="Management tools
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Bot [label="Bot
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Tools -> ORAN
+	Tools -> XAI
+	Tools -> XRL
+	Tools -> MgmtTools2
+	Tools -> Bot
+}

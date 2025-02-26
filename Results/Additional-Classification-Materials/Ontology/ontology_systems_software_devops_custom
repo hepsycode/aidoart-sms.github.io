@@ -1,0 +1,56 @@
+// DevOps Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	SSE [label="Systems and Software Engineering
+(WK: 293)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> SSE
+	DevOps [label="DevOps
+(WK: 88)" fillcolor=lightgreen shape=ellipse style=filled]
+	SSE -> DevOps
+	ContInt [label="Continuous Integration
+(WK: 17)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContDel [label="Continuous Delivery
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContDev [label="Continuous Development
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContDep [label="Continuous Deployment
+(WK: 7)" fillcolor=lightyellow shape=ellipse style=filled]
+	DeployAuto [label="Deployment Automation
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContMon [label="Continuous Monitoring
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContEval [label="Continuous Evaluation
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContEvol [label="Continuous Evolution
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Orchestration [label="Orchestration
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	Agile [label="Agile
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	MLOps [label="MLOps
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContSysSE [label="Continuous Systems and Software Engineering
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContSoftEng [label="Continuous Software Engineering
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ServiceOriented [label="Service-Oriented Architecture
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	Microservice [label="Microservice
+(WK: 8)" fillcolor=lightyellow shape=ellipse style=filled]
+	DevOps -> ContInt
+	DevOps -> ContDel
+	DevOps -> ContDev
+	DevOps -> ContDep
+	DevOps -> DeployAuto
+	DevOps -> ContMon
+	DevOps -> ContEval
+	DevOps -> ContEvol
+	DevOps -> Orchestration
+	DevOps -> Agile
+	DevOps -> MLOps
+	DevOps -> ContSysSE
+	DevOps -> ContSoftEng
+	DevOps -> ServiceOriented
+	DevOps -> Microservice
+}

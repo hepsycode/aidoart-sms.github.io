@@ -1,0 +1,44 @@
+// Cloud Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	SSE [label="Systems and Software Engineering
+(WK: 293)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> SSE
+	Cloud [label="Cloud
+(WK: 33)" fillcolor=lightgreen shape=ellipse style=filled]
+	SSE -> Cloud
+	CloudArch [label="Cloud Architectures
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	TOSCA [label="TOSCA
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	MultiCloud [label="Multi-Cloud
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudComputing [label="Cloud Computing
+(WK: 11)" fillcolor=lightyellow shape=ellipse style=filled]
+	AutonomicComp [label="Autonomic Computing
+(WK: 7)" fillcolor=lightyellow shape=ellipse style=filled]
+	Cloud -> CloudArch
+	Cloud -> TOSCA
+	Cloud -> MultiCloud
+	Cloud -> CloudComputing
+	Cloud -> AutonomicComp
+	CloudApp [label="Cloud Application
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	CloudServices [label="Cloud Services
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	CloudResources [label="Cloud Resources
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	CloudStandards [label="Cloud Standards
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	CloudComputing -> CloudApp
+	CloudComputing -> CloudServices
+	CloudComputing -> CloudResources
+	CloudComputing -> CloudStandards
+	SelfAdapt [label="Self-Adaptation
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	SelfHeal [label="Self-Healing
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	AutonomicComp -> SelfAdapt
+	AutonomicComp -> SelfHeal
+}

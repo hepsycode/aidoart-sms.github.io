@@ -1,0 +1,113 @@
+// Systems and Software Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	Systems [label="Systems
+(WK: 64)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> Systems
+	ComplexSystems [label="Complex Systems
+(WK: 1)" fillcolor=lightgreen shape=ellipse style=filled]
+	InformationSystems [label="Information Systems
+(WK: 1)" fillcolor=lightgreen shape=ellipse style=filled]
+	RealTimeSystems [label="Real-Time Systems
+(WK: 1)" fillcolor=lightgreen shape=ellipse style=filled]
+	CyberPhysicalSystems [label="Cyber-Physical Systems
+(WK: 43)" fillcolor=lightgreen shape=ellipse style=filled]
+	DistributedSystems [label="Distributed Systems
+(WK: 3)" fillcolor=lightgreen shape=ellipse style=filled]
+	SelfAdaptiveSystems [label="Self-Adaptive Systems
+(WK: 2)" fillcolor=lightgreen shape=ellipse style=filled]
+	SystemsEngineering [label="Systems Engineering
+(WK: 13)" fillcolor=lightgreen shape=ellipse style=filled]
+	Systems -> ComplexSystems
+	Systems -> InformationSystems
+	Systems -> RealTimeSystems
+	Systems -> CyberPhysicalSystems
+	Systems -> DistributedSystems
+	Systems -> SelfAdaptiveSystems
+	Systems -> SystemsEngineering
+	DigitalTwins [label="Digital Twins
+(WK: 7)" fillcolor=lightyellow shape=ellipse style=filled]
+	DigitalThread [label="Digital Thread
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	IoT [label="Internet of Things
+(WK: 14)" fillcolor=lightyellow shape=ellipse style=filled]
+	Industry4 [label="Industry 4.0
+(WK: 10)" fillcolor=lightyellow shape=ellipse style=filled]
+	CyberPhysicalSystems -> DigitalTwins
+	CyberPhysicalSystems -> DigitalThread
+	CyberPhysicalSystems -> IoT
+	CyberPhysicalSystems -> Industry4
+	DeviceFleet [label="Device Fleet
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	IoT -> DeviceFleet
+	IndCyberPhysical [label="Industrial Cyber-Physical Systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	IndAddManufact [label="Industrial Additive Manufacturing
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	AutonomousRobotics [label="Autonomous Robotics
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	RobotOS [label="Robot Operating System
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Automotive [label="Automotive
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	Industry4 -> IndCyberPhysical
+	Industry4 -> IndAddManufact
+	Industry4 -> AutonomousRobotics
+	Industry4 -> RobotOS
+	Industry4 -> Automotive
+	AutomotiveDomain [label="Automotive Domain
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	AutomotiveEcosystem1 [label="Automotive Ecosystem
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	AutomotiveSysEng [label="Automotive Systems Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	AutomotiveEcosystem2 [label="Automotive Ecosystem
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Automotive -> AutomotiveDomain
+	Automotive -> AutomotiveEcosystem1
+	Automotive -> AutomotiveSysEng
+	Automotive -> AutomotiveEcosystem2
+	DistControl [label="Distributed Control Systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DistRealTime [label="Distributed Real Time Systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DistMicro [label="Distributed Microservice Development
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DistributedSystems -> DistControl
+	DistributedSystems -> DistRealTime
+	DistributedSystems -> DistMicro
+	MultiAgents [label="Multi-Agents Systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SelfAdaptiveSystems -> MultiAgents
+	BuildSystems [label="Build Systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SystemsValidation [label="Systems Validation
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SystemsIntegration [label="Systems Integration
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	MBSystemsEng [label="Model-Based Systems Engineering
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	ProdSystemsEng [label="Production Systems Engineering
+(WK: 6)" fillcolor=lightyellow shape=ellipse style=filled]
+	SystemsEngineering -> BuildSystems
+	SystemsEngineering -> SystemsValidation
+	SystemsEngineering -> SystemsIntegration
+	SystemsEngineering -> MBSystemsEng
+	SystemsEngineering -> ProdSystemsEng
+	ProductEngineering [label="Product Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ProductDriven [label="Product Driven System
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ProductDerivation [label="Product Derivation
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ProductLineEng [label="Product Line Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SoftProdLines2 [label="Software Product Lines
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ProdSystemsEng -> ProductEngineering
+	ProdSystemsEng -> ProductDriven
+	ProdSystemsEng -> ProductDerivation
+	ProdSystemsEng -> ProductLineEng
+	ProdSystemsEng -> SoftProdLines2
+}

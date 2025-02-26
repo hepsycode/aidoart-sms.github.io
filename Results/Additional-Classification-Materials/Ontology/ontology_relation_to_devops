@@ -1,0 +1,140 @@
+// DevOps Ontology
+digraph {
+	rankdir=TB splines=ortho
+	DevOps [label=DevOps fillcolor=lightblue shape=box style=filled]
+	CPS [label="Cyber-Physical Systems
+(WK: 14)" fillcolor=lightgreen shape=ellipse style=filled]
+	DevOps -> CPS [headlabel="Related To"]
+	IoT [label="Internet of Things
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	DigitalTwins [label="digital twins
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	DeviceFleet [label="Device fleet
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	ComplexSys [label="Complex systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Ind4 [label="Industry 4.0:
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	CPS -> IoT
+	CPS -> DigitalTwins
+	CPS -> DeviceFleet
+	CPS -> ComplexSys
+	CPS -> Ind4
+	IndCyber [label="Industrial Cyber Physical Systems
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Automotive_CPS [label="Automotive
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Iso26262_CPS [label="Iso26262
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Ind4 -> IndCyber
+	Ind4 -> Automotive_CPS
+	Ind4 -> Iso26262_CPS
+	SE [label="Software Engineering
+(WK: 8)" fillcolor=lightgreen shape=ellipse style=filled]
+	DevOps -> SE [headlabel="Related To"]
+	SE_Coding [label="Coding
+(WK: 4)" fillcolor=lightblue shape=box style=filled]
+	SE_Perf [label="Performance
+(WK: 2)" fillcolor=lightblue shape=box style=filled]
+	SE_Process [label="Process
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SE_QualScen [label="Quality scenarios
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SE -> SE_Coding
+	SE -> SE_Perf
+	SE -> SE_Process
+	SE -> SE_QualScen
+	InfraCode [label="Infrastructure as Code
+(WK: 3)" fillcolor=lightpink shape=ellipse style=filled]
+	CodeGen [label="code generation
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SE_Coding -> InfraCode
+	SE_Coding -> CodeGen
+	PerfMon [label="Performance monitoring
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	PerfQual [label="Performance quality scenarios
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SE_Perf -> PerfMon
+	SE_Perf -> PerfQual
+	MDE [label="Model-Driven Engineering
+(WK: 17)" fillcolor=lightgreen shape=ellipse style=filled]
+	DevOps -> MDE [headlabel="Related To"]
+	ModelsRuntime [label="Models@runtime
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	MDSE [label="Model-Driven Software Engineering
+(WK: 6)" fillcolor=lightblue shape=box style=filled]
+	MDE_Dev [label="Model-Driven development
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	MDE -> ModelsRuntime
+	MDE -> MDSE
+	MDE -> MDE_Dev
+	DomainModel [label="Domain specific model
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	DomainLang [label="Domain Specific Languages
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	DomainTools [label="Domain Specific Tools
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Modeling [label="Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelLang [label="Modeling languages
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MDSE -> DomainModel
+	MDSE -> DomainLang
+	MDSE -> DomainTools
+	MDSE -> Modeling
+	MDSE -> ModelLang
+	AI [label="Artifical Intelligence
+(WK: 8)" fillcolor=lightgreen shape=ellipse style=filled]
+	DevOps -> AI [headlabel="Related To"]
+	ML_AI [label="Machine Learning
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	MLReg [label="ML Regression
+(WK: 3)" fillcolor=lightblue shape=box style=filled]
+	DataSci [label="Data Science
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	AI -> ML_AI
+	AI -> MLReg
+	AI -> DataSci
+	ANN [label="Artificial neural network
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	RandForest [label="Random forest
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SVM_AI [label="Support vector machine
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MLReg -> ANN
+	MLReg -> RandForest
+	MLReg -> SVM_AI
+	Cloud [label="Cloud
+(WK: 9)" fillcolor=lightgreen shape=ellipse style=filled]
+	DevOps -> Cloud [headlabel="Related To"]
+	CloudComputing [label="Cloud computing
+(WK: 3)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudApp [label="Cloud application
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudRes [label="Cloud resources
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudServ [label="Cloud Services
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudStand [label="Cloud standards
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Cloud -> CloudComputing
+	Cloud -> CloudApp
+	Cloud -> CloudRes
+	Cloud -> CloudServ
+	Cloud -> CloudStand
+	Tools [label="Tools & Framework
+(WK: 4)" fillcolor=lightgreen shape=ellipse style=filled]
+	DevOps -> Tools [headlabel=Uses]
+	Ant [label="Ant
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	TOSCA [label="TOSCA
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Eclipse [label="Eclipse
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	EMF [label="EMF
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Tools -> Ant
+	Tools -> TOSCA
+	Tools -> Eclipse
+	Tools -> EMF
+}

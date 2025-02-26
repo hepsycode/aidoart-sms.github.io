@@ -1,0 +1,242 @@
+// Software Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	Software [label="Software
+(WK: 133)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> Software
+	SoftArch [label="Software Architecture
+(WK: 6)" fillcolor=lightgreen shape=ellipse style=filled]
+	SoftDev [label="Software Development
+(WK: 5)" fillcolor=lightgreen shape=ellipse style=filled]
+	SoftEvol [label="Software Evolution
+(WK: 2)" fillcolor=lightgreen shape=ellipse style=filled]
+	SoftQual [label="Software Quality
+(WK: 2)" fillcolor=lightgreen shape=ellipse style=filled]
+	HighlyConfigurable [label="Highly Configurable Software
+(WK: 2)" fillcolor=lightgreen shape=ellipse style=filled]
+	SoftTesting [label="Software Testing
+(WK: 1)" fillcolor=lightgreen shape=ellipse style=filled]
+	SoftProdLines [label="Software Product Lines
+(WK: 4)" fillcolor=lightgreen shape=ellipse style=filled]
+	AutoSoft [label="Automotive Software
+(WK: 2)" fillcolor=lightgreen shape=ellipse style=filled]
+	SoftEngActivities [label="Software Engineering Activities
+(WK: 109)" fillcolor=lightgreen shape=ellipse style=filled]
+	Software -> SoftArch
+	Software -> SoftDev
+	Software -> SoftEvol
+	Software -> SoftQual
+	Software -> HighlyConfigurable
+	Software -> SoftTesting
+	Software -> SoftProdLines
+	Software -> AutoSoft
+	Software -> SoftEngActivities
+	AUTOSAR [label="AUTOSAR Adaptive
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	AutoSoft -> AUTOSAR
+	Requirements [label="Requirements
+(WK: 8)" fillcolor=lightyellow shape=ellipse style=filled]
+	Modeling [label="Modeling
+(WK: 23)" fillcolor=lightyellow shape=ellipse style=filled]
+	Coding [label="Coding
+(WK: 11)" fillcolor=lightyellow shape=ellipse style=filled]
+	Testing [label="Testing
+(WK: 32)" fillcolor=lightyellow shape=ellipse style=filled]
+	Monitoring [label="Monitoring
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	Others [label="Others
+(WK: 26)" fillcolor=lightyellow shape=ellipse style=filled]
+	SoftEngActivities -> Requirements
+	SoftEngActivities -> Modeling
+	SoftEngActivities -> Coding
+	SoftEngActivities -> Testing
+	SoftEngActivities -> Monitoring
+	SoftEngActivities -> Others
+	DataDrivenRE [label="Data-driven Requirements Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	NonFunctionalRE [label="Non-Functional Requirements
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ReqAnalysis [label="Requirements Analysis
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ReqMonitoring [label="Requirements Monitoring
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelDrivenRE [label="Model-Driven Requirements Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Requirements -> DataDrivenRE
+	Requirements -> NonFunctionalRE
+	Requirements -> ReqAnalysis
+	Requirements -> ReqMonitoring
+	Requirements -> ModelDrivenRE
+	BlendedModeling [label="Blended Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	BusinessProcModeling [label="Business Process Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ComputationalModeling [label="Computational Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	EnterpriseModeling [label="Enterprise Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	GoalModeling [label="Goal Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	GraphicalModeling [label="Graphical Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	IntelligentModeling [label="Intelligent Modeling Assistance
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelingSim [label="Modeling and simulation (M&S)
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelingGUI [label="Modeling Graphical User Interfaces
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelingCompArch [label="Modeling of Computer Architecture
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	OOPModeling [label="Object oriented modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	OntologyModeling [label="Ontology-based Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	QualityModeling [label="Quality Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ViewpointModeling [label="Viewpoint Modeling
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ArchModeling [label="Architecture Modeling
+(WK: 4)" fillcolor=lightpink shape=ellipse style=filled]
+	Modeling -> BlendedModeling
+	Modeling -> BusinessProcModeling
+	Modeling -> ComputationalModeling
+	Modeling -> EnterpriseModeling
+	Modeling -> GoalModeling
+	Modeling -> GraphicalModeling
+	Modeling -> IntelligentModeling
+	Modeling -> ModelingSim
+	Modeling -> ModelingGUI
+	Modeling -> ModelingCompArch
+	Modeling -> OOPModeling
+	Modeling -> OntologyModeling
+	Modeling -> QualityModeling
+	Modeling -> ViewpointModeling
+	Modeling -> ArchModeling
+	ArchFramework [label="Architecture Framework
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	ArchRules [label="Architectural Rules
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	ArchDiscover [label="Architecture Discovering
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	ArchRecover [label="Architecture Recovering
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	ArchModeling -> ArchFramework
+	ArchModeling -> ArchRules
+	ArchModeling -> ArchDiscover
+	ArchModeling -> ArchRecover
+	CodeGen [label="Code Generation
+(WK: 5)" fillcolor=lightpink shape=ellipse style=filled]
+	InfraAsCode [label="Infrastructure as Code
+(WK: 3)" fillcolor=lightpink shape=ellipse style=filled]
+	LowCode [label="Low-Code Development
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	NoCode [label="No-Code
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Coding -> CodeGen
+	Coding -> InfraAsCode
+	Coding -> LowCode
+	Coding -> NoCode
+	IntegrationTest [label="Integration Testing
+(WK: 4)" fillcolor=lightpink shape=ellipse style=filled]
+	TestPrioritization [label="Test Prioritization
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	RegressionTest [label="Regression Testing
+(WK: 10)" fillcolor=lightpink shape=ellipse style=filled]
+	TestCase [label="Test Case
+(WK: 10)" fillcolor=lightpink shape=ellipse style=filled]
+	Testing -> IntegrationTest
+	Testing -> TestPrioritization
+	Testing -> RegressionTest
+	Testing -> TestCase
+	IRRegr [label="IR-based Regression Testing
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	MBRegr [label="Model-Based Regression Testing
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	UMLRegr [label="UML Regression Testing
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	RegressionTest -> IRRegr
+	RegressionTest -> MBRegr
+	RegressionTest -> UMLRegr
+	TestCasePrior [label="Test Case Prioritization
+(WK: 6)" fillcolor=lightgrey shape=ellipse style=filled]
+	TestCaseSelect [label="Test Case Selection
+(WK: 3)" fillcolor=lightgrey shape=ellipse style=filled]
+	TestCase -> TestCasePrior
+	TestCase -> TestCaseSelect
+	EventMon [label="Event Monitoring and Visualization
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	PerfMon [label="Performance Monitoring
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ReqMon2 [label="Requirements Monitoring
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ContMon [label="Continuous Monitoring
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	Monitoring -> EventMon
+	Monitoring -> PerfMon
+	Monitoring -> ReqMon2
+	Monitoring -> ContMon
+	Process [label="Process
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	Integration [label="Integration
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	Simulation [label="Simulation
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	Transformation [label="Transformation
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	Incremental [label="Incremental
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	OthersPerf [label="Performance
+(WK: 5)" fillcolor=lightpink shape=ellipse style=filled]
+	OthersQual [label="Quality
+(WK: 6)" fillcolor=lightpink shape=ellipse style=filled]
+	OthersRun [label="Runtime
+(WK: 5)" fillcolor=lightpink shape=ellipse style=filled]
+	Others -> Process
+	Others -> Integration
+	Others -> Simulation
+	Others -> Transformation
+	Others -> Incremental
+	Others -> OthersPerf
+	Others -> OthersQual
+	Others -> OthersRun
+	PerfBottlenecks [label="Performance Bottlenecks
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	PerfEng [label="Performance Engineering
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	PerfModel [label="Performance Model
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	PerfMon2 [label="Performance Monitoring
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	PerfQualScen [label="Performance Quality Scenarios
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	OthersPerf -> PerfBottlenecks
+	OthersPerf -> PerfEng
+	OthersPerf -> PerfModel
+	OthersPerf -> PerfMon2
+	OthersPerf -> PerfQualScen
+	QualAssess [label="Quality Assessment
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	QualAssur [label="Quality Assurance
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	QualModel [label="Quality Modeling
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	QualScen [label="Quality Scenarios
+(WK: 2)" fillcolor=lightgrey shape=ellipse style=filled]
+	QualAwareDevOps [label="Quality-aware DevOps
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	OthersQual -> QualAssess
+	OthersQual -> QualAssur
+	OthersQual -> QualModel
+	OthersQual -> QualScen
+	OthersQual -> QualAwareDevOps
+	RunAnalysis [label="Runtime Analysis
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	RunModel [label="Runtime Model
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	RunVerif [label="Runtime Verification
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	OthersRun -> RunAnalysis
+	OthersRun -> RunModel
+	OthersRun -> RunVerif
+}

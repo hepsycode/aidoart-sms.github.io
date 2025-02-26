@@ -1,0 +1,80 @@
+// Artificial Intelligence Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	SSE [label="Systems and Software Engineering
+(WK: 293)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> SSE
+	AI [label="Artifical Intelligence
+(WK: 58)" fillcolor=lightgreen shape=ellipse style=filled]
+	SSE -> AI
+	NLP [label="Natural Language Processing
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	Fuzzy [label="Fuzzy logic
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DataScience [label="Data Science
+(WK: 4)" fillcolor=lightyellow shape=ellipse style=filled]
+	ML [label="Machine Learning
+(WK: 43)" fillcolor=lightyellow shape=ellipse style=filled]
+	AI -> NLP
+	AI -> Fuzzy
+	AI -> DataScience
+	AI -> ML
+	BigData [label="Big Data
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	BigDataAnalytics [label="Big Data analytics
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	BigDataArch [label="Big Data architectures
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	BigDataSysVer [label="Big Data Systems Verification
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	DataScience -> BigData
+	DataScience -> BigDataAnalytics
+	DataScience -> BigDataArch
+	DataScience -> BigDataSysVer
+	MLExperiments [label="Machine Learning Experiments
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MLOpsPlat [label="Machine Learning Operations Platform
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	TransferLearning [label="Transfer Learning
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	Unsupervised [label="Unsupervised Learning
+(WK: 3)" fillcolor=lightpink shape=ellipse style=filled]
+	Supervised [label="Supervised Learning
+(WK: 19)" fillcolor=lightpink shape=ellipse style=filled]
+	ML -> MLExperiments
+	ML -> MLOpsPlat
+	ML -> TransferLearning
+	ML -> Unsupervised
+	ML -> Supervised
+	RecSys [label="Recommender Systems
+(WK: 2)" fillcolor=lightgrey shape=ellipse style=filled]
+	TagRecSys [label="Tag-based Recommender System
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	Unsupervised -> RecSys
+	Unsupervised -> TagRecSys
+	Classification [label="Classification
+(WK: 9)" fillcolor=lightgrey shape=ellipse style=filled]
+	Regression [label="Regression
+(WK: 10)" fillcolor=lightgrey shape=ellipse style=filled]
+	Supervised -> Classification
+	Supervised -> Regression
+	SVMC [label="Support Vector Machine
+(WK: 1)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	DeepLearn_Class [label="Deep Learning
+(WK: 8)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	Classification -> SVMC
+	Classification -> DeepLearn_Class
+	RegTrees [label="Regression Trees
+(WK: 1)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	SVMR [label="Support Vector Machine
+(WK: 1)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	DeepLearn_Reg [label="Deep Learning
+(WK: 8)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	Regression -> RegTrees
+	Regression -> SVMR
+	Regression -> DeepLearn_Reg
+	ANN [label="Artificial Neural networks
+(WK: 4)" fillcolor=thistle shape=ellipse style=filled]
+	DeepLearn_Class -> ANN
+}

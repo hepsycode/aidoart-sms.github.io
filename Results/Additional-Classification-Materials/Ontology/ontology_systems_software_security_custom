@@ -1,0 +1,20 @@
+// Security Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	SSE [label="Systems and Software Engineering
+(WK: 293)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> SSE
+	Security [label="Security
+(WK: 4)" fillcolor=lightgreen shape=ellipse style=filled]
+	SSE -> Security
+	Cybersecurity [label="Cybersecurity
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	SecDesign [label="Security-by-design
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SecDevOps [label="SecDevOps
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Security -> Cybersecurity
+	Security -> SecDesign
+	Security -> SecDevOps
+}

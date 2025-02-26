@@ -1,0 +1,119 @@
+// Systems and Software Engineering Ontology
+digraph {
+	rankdir=TB splines=ortho
+	SysSoft [label="Systems and Software:" fillcolor=lightblue shape=box style=filled]
+	SSE [label="Systems and Software Engineering
+(WK: 293)" fillcolor=lightblue shape=box style=filled]
+	SysSoft -> SSE
+	Model [label="Model
+(WK: 110)" fillcolor=lightgreen shape=ellipse style=filled]
+	SSE -> Model
+	ModelExecution [label="Model Execution
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelRepair [label="Model Repair
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelsRuntime [label="Models@Runtime
+(WK: 5)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelChecking [label="Model Checking
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelEvolution [label="Model Evolution
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelLearning [label="Model Learning
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelMaturity [label="Model Maturity
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelScaffolding [label="Model Scaffolding
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelStandards [label="Model Standards
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelSwap [label="Model Swap
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelTransformation [label="Model Transformation
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelBased [label="Model-Based
+(WK: 19)" fillcolor=lightyellow shape=ellipse style=filled]
+	ModelDriven [label="Model-Driven
+(WK: 73)" fillcolor=lightyellow shape=ellipse style=filled]
+	Model -> ModelExecution
+	Model -> ModelRepair
+	Model -> ModelsRuntime
+	Model -> ModelChecking
+	Model -> ModelEvolution
+	Model -> ModelLearning
+	Model -> ModelMaturity
+	Model -> ModelScaffolding
+	Model -> ModelStandards
+	Model -> ModelSwap
+	Model -> ModelTransformation
+	Model -> ModelBased
+	Model -> ModelDriven
+	MB_Engineering [label="Model-Based Engineering
+(WK: 3)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_SysEng [label="Model-Based Systems Engineering
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_Safety [label="Model-Based Safety Analysis
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_Development [label="Model-Based Development
+(WK: 4)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_Testing [label="Model-Based Testing
+(WK: 6)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_RegrTesting [label="Model-Based Regression Testing
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_SoftEng [label="Model-Based Software Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MB_SimSysEng [label="Model-Based Simulation Systems Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelBased -> MB_Engineering
+	ModelBased -> MB_SysEng
+	ModelBased -> MB_Safety
+	ModelBased -> MB_Development
+	ModelBased -> MB_Testing
+	ModelBased -> MB_RegrTesting
+	ModelBased -> MB_SoftEng
+	ModelBased -> MB_SimSysEng
+	MD_Architecture [label="Model-Driven Architecture
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MD_Development [label="Model-Driven Development
+(WK: 6)" fillcolor=lightpink shape=ellipse style=filled]
+	MD_Microservice [label="Model-Driven Microservice Development
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	MD_Engineering [label="Model-Driven Engineering
+(WK: 65)" fillcolor=lightpink shape=ellipse style=filled]
+	ModelDriven -> MD_Architecture
+	ModelDriven -> MD_Development
+	ModelDriven -> MD_Microservice
+	ModelDriven -> MD_Engineering
+	MDReqEng [label="Model-Driven Requirements Engineering
+(WK: 1)" fillcolor=lightgrey shape=ellipse style=filled]
+	MDSoftEng [label="Model-Driven Software Engineering
+(WK: 27)" fillcolor=lightgrey shape=ellipse style=filled]
+	MD_Engineering -> MDReqEng
+	MD_Engineering -> MDSoftEng
+	DomainSpecLang [label="Domain Specific Languages
+(WK: 5)" fillcolor=lightgrey shape=ellipse style=filled]
+	DomainModeling [label="Domain Modeling
+(WK: 2)" fillcolor=lightgrey shape=ellipse style=filled]
+	DomainSpecModel [label="Domain Specific Model
+(WK: 5)" fillcolor=lightgrey shape=ellipse style=filled]
+	ModelingLang [label="Modeling languages
+(WK: 3)" fillcolor=lightgrey shape=ellipse style=filled]
+	UML [label="UML
+(WK: 2)" fillcolor=lightgrey shape=ellipse style=filled]
+	Metamodeling [label="Metamodeling
+(WK: 8)" fillcolor=lightgrey shape=ellipse style=filled]
+	MDSoftEng -> DomainSpecLang
+	MDSoftEng -> DomainModeling
+	MDSoftEng -> DomainSpecModel
+	MDSoftEng -> ModelingLang
+	MDSoftEng -> UML
+	MDSoftEng -> Metamodeling
+	MetaClass [label="Metamodel Classification
+(WK: 1)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	MetaEvol [label="Metamodel Evolution
+(WK: 1)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	MetaRepos [label="Metamodel Repositories
+(WK: 1)" fillcolor=lightgoldenrod shape=ellipse style=filled]
+	Metamodeling -> MetaClass
+	Metamodeling -> MetaEvol
+	Metamodeling -> MetaRepos
+}

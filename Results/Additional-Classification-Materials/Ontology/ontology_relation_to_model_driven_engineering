@@ -1,0 +1,131 @@
+// Model-Driven Engineering Ontology
+digraph {
+	rankdir=TB splines=ortho
+	MDE [label="Model-Driven Engineering" fillcolor=lightblue shape=box style=filled]
+	CPS [label="Cyber-Physical Systems
+(WK: 8)" fillcolor=lightgreen shape=ellipse style=filled]
+	MDE -> CPS [headlabel="Related To"]
+	IoT [label="Internet of Things
+(WK: 4)" fillcolor=lightyellow shape=ellipse style=filled]
+	DigitalTwins [label="Digital Twins
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SmartGrids [label="Smart grids
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CPS -> IoT
+	CPS -> DigitalTwins
+	CPS -> SmartGrids
+	SE [label="Software Engineering
+(WK: 13)" fillcolor=lightgreen shape=ellipse style=filled]
+	MDE -> SE [headlabel="Related To"]
+	SE_Req [label="Requirements
+(WK: 5)" fillcolor=lightblue shape=box style=filled]
+	SE_Code [label="Coding
+(WK: 3)" fillcolor=lightblue shape=box style=filled]
+	SE -> SE_Req
+	SE -> SE_Code
+	PerfEng [label="Performance engineering
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	ProdSysEng [label="Production Systems Engineering
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	QualAssur [label="Quality assurance
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Testing [label="Testing
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	SE -> PerfEng
+	SE -> ProdSysEng
+	SE -> QualAssur
+	SE -> Testing
+	Req_a [label="Requirements
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	ReqMon [label="Requirements monitoring
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	ReqEng [label="Requirements Engineering
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SE_Req -> Req_a
+	SE_Req -> ReqMon
+	SE_Req -> ReqEng
+	CodeGen [label="Code generation
+(WK: 2)" fillcolor=lightpink shape=ellipse style=filled]
+	InfraCode [label="Infrastructure as code
+(WK: 1)" fillcolor=lightpink shape=ellipse style=filled]
+	SE_Code -> CodeGen
+	SE_Code -> InfraCode
+	DevOps [label="DevOps
+(WK: 15)" fillcolor=lightgreen shape=ellipse style=filled]
+	MDE -> DevOps [headlabel="Related To"]
+	SOA [label="Service-Oriented Architecture
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	ContEvol [label="Continuous evolution
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Agile [label="Agile
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CICD [label="CI/CD
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DeployAuto [label="Deployment Automation
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Orch [label="Orchestration
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	MicroArch [label="Microservice Architecture
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Microservices [label="Microservices
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	QualAware [label="Quality-aware devops
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	DevOps -> SOA
+	DevOps -> ContEvol
+	DevOps -> Agile
+	DevOps -> CICD
+	DevOps -> DeployAuto
+	DevOps -> Orch
+	DevOps -> MicroArch
+	DevOps -> Microservices
+	DevOps -> QualAware
+	AI [label="Artifical Intelligence
+(WK: 6)" fillcolor=lightgreen shape=ellipse style=filled]
+	MDE -> AI [headlabel="Related To"]
+	ML_AI [label="Machine Learning
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	NLP_AI [label="Natural Language Processing
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	Neural [label="Neural networks
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	RecSys [label="Recommendation Systems
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	FogComp_AI [label="Fog Computing
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	AI -> ML_AI
+	AI -> NLP_AI
+	AI -> Neural
+	AI -> RecSys
+	AI -> FogComp_AI
+	Cloud [label="Cloud
+(WK: 6)" fillcolor=lightgreen shape=ellipse style=filled]
+	MDE -> Cloud [headlabel="Related To"]
+	MultiCloud [label="Multi-cloud
+(WK: 2)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudApp [label="Cloud application
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	CloudML [label="Cloud ML
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Cloud -> MultiCloud
+	Cloud -> CloudApp
+	Cloud -> CloudML
+	Tools [label="Tools & Framework
+(WK: 5)" fillcolor=lightgreen shape=ellipse style=filled]
+	MDE -> Tools [headlabel=Uses]
+	Ant [label="Ant
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Eclipse [label="Eclipse
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Sirius [label="Sirius
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	TOSCA [label="TOSCA
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	JetMPS [label="Jetbrains MPS
+(WK: 1)" fillcolor=lightyellow shape=ellipse style=filled]
+	Tools -> Ant
+	Tools -> Eclipse
+	Tools -> Sirius
+	Tools -> TOSCA
+	Tools -> JetMPS
+}
