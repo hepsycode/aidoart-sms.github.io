@@ -42,3 +42,22 @@ The repository accompanying this systematic mapping study (SMS) includes additio
 
 For access to the repository and its contents, please refer to the study's publication or contact the authors directly.
 
+## How to Cite?
+
+If you use this work in your research or project, please reference it as follows:
+
+```
+@article{Berardinelli20253759454,
+    author = {Berardinelli, Luca and Muttillo, Vittoriano and Eramo, Romina and Bruneliere, Hugo and Rahimi, Abbas and Cicchetti, Antonio and Giner-Miguelez, Joan and G\'{o}mez, Abel and Potena, Pasqualina and Saadatmand, Mehrdad},
+    title = {Model Driven Engineering, Artificial Intelligence, and DevOps for Software and Systems Engineering: A Systematic Mapping Study of Synergies and Challenges},
+    year = {2025},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    issn = {1049-331X},
+    url = {https://doi.org/10.1145/3759454},
+    doi = {10.1145/3759454},
+    journal = {ACM Trans. Softw. Eng. Methodol.}
+}
+```
+
+---
